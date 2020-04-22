@@ -5,6 +5,15 @@ module.exports = {
 	author: '@JackAHarding'
   },
   plugins: [
+	{
+		resolve: `gatsby-plugin-google-analytics`,
+		options: {
+			// The property ID; the tracking code won't be generated without it
+			trackingId: "UA-63855928-4",
+			// Defines where to place the tracking script - `true` in the head and `false` in the body
+			head: false
+		}
+	}
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,7 +34,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+	  },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
