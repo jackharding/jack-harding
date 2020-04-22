@@ -1,20 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Jack Harding | Web Developer" />
+    
+	<a href="https://github.com/jackharding" target="_blank">
+		<span className="sr-only">Here's my Github</span>
+		<svg width="47" height="46" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 0C10.523 0 0 10.558 0 23.582c0 10.42 6.734 19.26 16.07 22.377 1.175.219 1.607-.511 1.607-1.134 0-.562-.022-2.42-.032-4.39-6.538 1.426-7.918-2.783-7.918-2.783-1.069-2.726-2.609-3.45-2.609-3.45-2.132-1.464.16-1.434.16-1.434 2.36.166 3.603 2.43 3.603 2.43 2.096 3.605 5.498 2.563 6.839 1.96.21-1.524.82-2.564 1.492-3.153-5.22-.596-10.707-2.618-10.707-11.654 0-2.575.918-4.679 2.421-6.33-.244-.594-1.048-2.993.228-6.241 0 0 1.973-.634 6.464 2.417 1.875-.522 3.885-.784 5.882-.793a22.51 22.51 0 015.887.793c4.486-3.05 6.456-2.417 6.456-2.417 1.28 3.248.475 5.647.23 6.24 1.508 1.652 2.42 3.756 2.42 6.33 0 9.058-5.498 11.053-10.731 11.636.843.732 1.594 2.167 1.594 4.367 0 3.156-.027 5.695-.027 6.472 0 .628.423 1.363 1.614 1.131A23.578 23.578 0 0047 23.582C47 10.558 36.478 0 23.5 0" fill="#161514" fill-rule="evenodd"/></svg>
+	</a>
   </Layout>
 )
 
